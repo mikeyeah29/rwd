@@ -1,0 +1,64 @@
+// colors
+
+$color-primary: #227C9D;
+$color-secondary: #0A2E36;
+$color-accent: #FE6D73;
+
+$color-dark: #021D27;
+$color-light: #FEF9EF;
+
+$color-grey: #878797;
+$color-light-grey: #E9E9EC;
+$color-dark-grey: #393941;
+
+$color-primary-light: lighten($color-primary, 40%);
+$color-primary-dark: darken($color-primary, 40%);
+
+$color-secondary-light: lighten($color-secondary, 40%);
+$color-secondary-dark: darken($color-secondary, 40%);
+
+$color-accent-light: lighten($color-accent, 40%);
+$color-accent-dark: darken($color-accent, 40%);
+
+// color uses
+
+$color-body: #fff;
+$color-text: #333;
+$color-heading-text: $color-light;
+
+$color-section-one: $color-primary;
+$color-section-two: $color-light;
+$color-section-three: $color-text;
+
+// fonts
+
+$font-url--google: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Quicksand:wght@300;400;600&display=swap';
+
+$font-primary: 'Quicksand', cursive;
+$font-secondary: 'Open Sans', sans-serif;
+
+// breakpoints
+
+$small: 560px;
+$tablet: 768px;
+$desktop: 992px;
+$large: 1024px;
+$extra: 1200px;
+
+// font sizes
+
+$font--xs: 14px;
+$font--sm: 16px;
+$font--md: 24px;
+$font--lg: 32px;
+$font--xl: 48px;
+$font--xxl: 64px;
+
+// spaceing
+
+$space-xs: 8px;
+$space-sm: 16px;
+$space-md: 32px;
+$space-lg: 48px;
+$space-xl: 64px;
+$space-xxl: 80px;

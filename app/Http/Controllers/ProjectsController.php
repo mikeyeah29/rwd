@@ -15,10 +15,17 @@ class ProjectsController extends Controller
  		]);
  	}
 
- 	public function show()
+ 	public function show($slug)
  	{
+ 		$project = Project::get($slug);
+
+ 		if(!$project) {
+ 			return redirect('/404');
+ 		}
+
  		return view('projects.show', [
- 			'title' => 'Rockett Web Development'
+ 			'title' => 'Rockett Web Development',
+ 			'project' => $project
  		]);
  	}
 }

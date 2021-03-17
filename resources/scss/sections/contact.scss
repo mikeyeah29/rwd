@@ -1,0 +1,78 @@
+.portfolio-contact {
+	background: $color-section-three;
+
+	.seperator-triangle {
+		border-left: solid 50vw $color-section-three;
+    	border-right: solid 50vw $color-section-three;
+	}
+
+	.portfolio-heading-block {
+		background: $color-section-two;
+		h2 {
+			color: $color-section-three;
+			&:before {
+				background: $color-section-three;
+			}
+		}
+	}
+
+	.avatar {
+		width: 220px;
+		height: 220px;
+	}
+
+	.form {
+		width: 90%;
+		max-width: 500px;
+		margin: 0px auto;
+	}
+
+	.form-bubbles {
+		input, textarea {
+			border: solid 2px $color-light;
+			background: transparent;
+			outline: none;
+			color: $color-light;
+			&:focus {
+				outline-color: transparent;
+				-webkit-appearance:none;
+				outline-style: none;
+				border: solid 2px $color-accent;
+			}
+		}
+		textarea {
+			height: 160px;
+		}
+	}
+
+	.form-bubbles__button {
+		
+		background: $color-light;
+		color: $color-dark;
+	    height: 40px;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+
+		&:before {
+		    content: "";
+		    display: block;
+		    width: 0%;
+		    height: 100%;
+		    position: absolute;
+		    top: 0px;
+		    left: 0px;
+		    transition: 0.3s;
+		    z-index: -1;
+		    background: $color-accent;
+	    }
+	    &:hover {
+	    	color: $color-light;
+	    	&:before {
+	    		width: 100%;
+	    	}
+	    }
+
+	}
+
+}

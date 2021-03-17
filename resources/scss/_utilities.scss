@@ -1,0 +1,95 @@
+/*========== COLORS ==========*/
+
+// text colors
+
+.txt-color-primary { color: $color-primary; }
+.txt-color-secondary { color: $color-secondary; }
+.txt-color-accent { color: $color-accent; }
+
+.txt-color-dark { color: $color-dark; }
+.txt-color-light { color: $color-light; }
+
+.txt-color-grey { color: $color-grey; }
+.txt-color-light-grey { color: $color-light-grey; }
+.txt-color-dark-grey { color: $color-dark-grey; }
+
+// bg colors
+
+.bg-color-primary { background-color: $color-primary; }
+.bg-color-secondary { background-color: $color-secondary; }
+.bg-color-accent { background-color: $color-accent; }
+
+.bg-color-dark { background-color: $color-dark; }
+.bg-color-light { background-color: $color-light; }
+
+.bg-color-grey { background-color: $color-grey; }
+.bg-color-light-grey { background-color: $color-light-grey; }
+.bg-color-dark-grey { background-color: $color-dark-grey; }
+
+// border colors
+
+.border-color-primary { border-color: $color-primary; }
+.border-color-secondary { border-color: $color-secondary; }
+.border-color-accent { border-color: $color-accent; }
+
+.border-color-dark { border-color: $color-dark; }
+.border-color-light { border-color: $color-light; }
+
+.border-color-grey { border-color: $color-grey; }
+.border-color-light-grey { border-color: $color-light-grey; }
+.border-color-dark-grey { border-color: $color-dark-grey; }
+
+/*========== TEXT ==========*/
+
+// fonts sizes
+
+.font-xs { font-size: $font--xs; }
+.font-sm { font-size: $font--sm; }
+.font-md { font-size: $font--md; }
+.font-lg { font-size: $font--lg; }
+.font-xl { font-size: $font--xl; }
+.font-xxl { font-size: $font--xxl; }
+
+// Headlines
+
+// other utils
+
+/*========== BORDERS ==========*/
+
+.b-1 { border-width: 1px; }
+.b-2 { border-width: 2px; }
+.b-3 { border-width: 3px; }
+.b-4 { border-width: 4px; }
+.b-5 { border-width: 5px; }
+
+.bt-1 { border-top: solid 1px; }
+.bt-2 { border-top: solid 2px; }
+.bt-3 { border-top: solid 3px; }
+.bt-4 { border-top: solid 4px; }
+.bt-5 { border-top: solid 5px; }
+
+.br-1 { border-right: solid 1px; }
+.br-2 { border-right: solid 2px; }
+.br-3 { border-right: solid 3px; }
+.br-4 { border-right: solid 4px; }
+.br-5 { border-right: solid 5px; }
+
+.bl-1 { border-left: solid 1px; }
+.bl-2 { border-left: solid 2px; }
+.bl-3 { border-left: solid 3px; }
+.bl-4 { border-left: solid 4px; }
+.bl-5 { border-left: solid 5px; }
+
+.bb-1 { border-bottom: solid 1px; }
+.bb-2 { border-bottom: solid 2px; }
+.bb-3 { border-bottom: solid 3px; }
+.bb-4 { border-bottom: solid 4px; }
+.bb-5 { border-bottom: solid 5px; }
+
+/*========== HELPERS ==========*/
+
+.ul-0 {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}

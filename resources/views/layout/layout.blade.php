@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{{ $title }}</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="{{ url('/css/main.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url('/css/app.css') }}">
 	</head>
 
 	<body>
@@ -28,15 +28,15 @@
 		</div>
 
 		<nav class="portfolio-nav">
-			<ul>	
+			<ul>
 				<li>
-					<a href="/">Projects</a>
+					<a href="{{ url('/') }}">Home</a>
+				</li>		
+				<li>
+					<a href="{{ url('/projects') }}">Projects</a>
 				</li>				
 				<li>
-					<a href="/articles">Skills</a>
-				</li>			
-				<li>
-					<a href="/contact">Contact</a>
+					<a href="{{ url('/#contact') }}" class="close-menu">Contact</a>
 				</li>
 			</ul>
 		</nav>

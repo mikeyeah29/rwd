@@ -1,0 +1,30 @@
+@if variable-exists(font-url--google){
+	@import url($font-url--google);
+}
+
+.font-primary { font-family: $font-primary; }
+.font-secondary { font-family: $font-secondary; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-primary;
+}
+
+p, a, li, div, input, textarea, span {
+	font-family: $font-secondary;
+}
+
+.hdln_1 {
+	font-size: $font--lg;
+	color: $color-heading-text;
+}
+
+.hdln_2 {
+	margin: $space-md 0px 0px 0px;
+	color: $color-heading-text;
+	padding-bottom: $space-xs;
+	font-size: $font--md;
+}
+
+.hdln_3 {
+
+}

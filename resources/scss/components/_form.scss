@@ -1,0 +1,28 @@
+// base form
+
+.form {
+
+}
+
+// themes
+
+.form-bubbles {
+	input, textarea {
+	    border-radius: 8px;
+    	border: none;
+	}
+	&__button {
+		border-radius: 8px;
+		border: none;
+		background: $color-accent;
+		color: $color-light;
+	}
+}
+
+.form-ghost {
+
+}
+
+.form-bold {
+
+}

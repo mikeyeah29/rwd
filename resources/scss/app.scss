@@ -1,0 +1,34 @@
+@import 'variables', 
+'base', 
+'typeography', 
+'utilities', 
+'seperators', 
+'themes/portfolio', 
+'vendor/burgers', 
+'components/form', 
+'sections/header', 
+'sections/gallary', 
+'sections/skills', 
+'sections/contact', 
+'sections/footer', 
+'sections/item';
+
+.portfolio-header {
+	border-bottom: solid 5px $color-light;
+}
+
+.portfolio-heading-block {
+	background: $color-dark-grey;
+}
+
+.button-style-1 {
+	border: solid 2px $color-light;
+	color: $color-light;
+	&:before {
+		background: $color-accent;
+	}
+	&:hover {
+		border: solid 2px $color-accent;
+		color: #fff;
+	}
+}

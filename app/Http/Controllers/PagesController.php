@@ -9,52 +9,15 @@ class PagesController extends Controller
 {
  	public function home() 
  	{
- 		// $projects = [
- 		// 	array(
-			// 	'name' => 'Greenroom App',
-			// 	'tags' => ['Vue', 'API', 'Cypress'],
-			// 	'description' => 'Tour managing app for iPhone, Android & Web',
-			// 	'img' => '/img/road.jpg'
-			// ),
-			// array(
-			// 	'name' => 'Chord Generator',
-			// 	'tags' => ['Vue', 'API', 'Cypress'],
-			// 	'description' => 'A small web app that generates ',
-			// 	'img' => '/img/road.jpg'
-			// ),
-			// array(
-			// 	'name' => 'Acacia Custom Guitars',
-			// 	'tags' => ['Vue', 'Laravel'],
-			// 	'description' => 'Custom guitar form builder',
-			// 	'img' => '/img/acacia.jpg'
-			// ),
-			// array(
-			// 	'name' => 'The Dent Act',
-			// 	'tags' => ['WordPress'],
-			// 	'description' => 'WordPress theme for bands and artists',
-			// 	'img' => '/img/tda.jpg'
-			// ),
-			// array(
-			// 	'name' => 'WigWam',
-			// 	'tags' => ['php', 'node js'],
-			// 	'description' => 'Website mockup builder - designed for quick poc development',
-			// 	'img' => '/img/wigwam.jpg'
-			// ),
-			// array(
-			// 	'name' => 'Greenroom App',
-			// 	'tags' => ['Vue', 'API', 'Cypress'],
-			// 	'description' => '',
-			// 	'img' => '/img/road.jpg'
-			// )
- 		// ];
-
  		$projects = Project::getFeatured();
 
- 		$skills = [
+ 		$levels = ['got the gist', 'confident', 'nailing it', 'god like'];
+
+ 		$skillTree = [
 			'Frontend' => [
 				'html' => 95,
 				'css/sass' => 95,
-				'JavaScript' => 80,
+				'JavaScript' => 75,
 				'jQuery' => 90,
 				'VueJs' => 70,
 				'React' => 20
@@ -65,8 +28,8 @@ class PagesController extends Controller
 				
 			],
 			'Framewords' => [
-				'laravel' => 68,
-				'WordPress' => 80
+				'laravel' => 80,
+				'WordPress' => 90
 			],
 			'Other' => [
 				'Command Line' => 50,
@@ -75,7 +38,8 @@ class PagesController extends Controller
 
  		return view('pages.home', [
  			'title' => 'Rockett Web Development',
- 			'skills' => $skills,
+ 			'levels' => $levels,
+ 			'skillTree' => $skillTree,
  			'projects' => $projects
  		]);
  	}

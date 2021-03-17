@@ -1,0 +1,76 @@
+img {
+	max-width: 100%;
+}
+
+.burger .burger-lines,
+.burger .burger-lines:after,
+.burger .burger-lines:before { background-color: $color-light; }
+
+/* avatars */
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+/* buttons */
+
+@mixin buttonStyleOneColor($color) {
+	color: darken($color, 40%);
+	background: $color;
+	border: solid 2px $color;
+	&:before {
+		background: lighten($color, 20%);
+	}
+}
+
+.button-style-1 {
+
+	display: inline-block;
+	text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: solid 2px $color-dark;
+    color: $color-dark;
+    &:before {
+	    content: "";
+	    display: block;
+	    width: 0%;
+	    height: 100%;
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    transition: 0.3s;
+	    z-index: -1;
+	    background: $color-primary;
+    }
+    &:hover {
+    	color: $color-primary-light;
+    	border: solid 2px $color-primary;
+    	&:before {
+    		width: 100%;
+    	}
+    }
+
+    // color variations
+
+    &--primary {
+    	@include buttonStyleOneColor($color-accent);
+    }
+
+    &--secondary {
+    	@include buttonStyleOneColor(#456);
+    }
+
+    &--danger {
+    	
+    }
+}
+

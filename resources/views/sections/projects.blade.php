@@ -1,11 +1,11 @@
 <div class="d-flex flex-wrap justify-content-center">
 	
-	<?php foreach ($projects as $project) { ?>
+	<?php foreach ($projects as $slug => $project) { ?>
 		
-		<div class="portfolio-square">
+		<a class="portfolio-square" href="{{ url('/projects/' . $slug) }}">
 			<img src="img/road.jpg" />
 			<span class="portfolio-square__title">{{ $project['name'] }}</span>
-		</div>
+		</a>
 
 	<?php } ?>
 

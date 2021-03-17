@@ -1,0 +1,57 @@
+.portfolio-item {
+	&__content {
+		max-width: 600px;
+		background: white;
+		margin: -100px auto 0px auto;
+		min-height: 500px;
+		padding: 24px;
+		z-index: 9;
+	    position: relative;
+	    border-radius: 3px;
+	}
+	.tag {
+		background: $color-accent;
+		border-radius: 30px;
+		display: inline-block;
+		padding: 4px 16px;
+		font-size: 12px;
+		color: #fff;
+	}
+	.info-bar {
+		text-align: right;
+	}
+}
+
+.portfolio-hero {
+	background: #000000a3;
+	text-align: center;
+	position: relative;
+	height: 350px;
+	h1 {
+	    margin-top: 102px;
+	}
+    h1, h2 {
+    	position: relative;
+    	display: inline-block;
+    	&:before {
+			content: "";
+			height: 3px;
+			width: 40%;
+			background: $color-heading-text;
+			position: absolute;
+			bottom: 0px;
+			border-radius: 10px;
+			margin: 0px 30%;
+		}
+    }
+	img {
+		width: 100%;
+		height: 350px;
+		object-fit: cover;
+		z-index: -3;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+}
+

@@ -1,0 +1,111 @@
+
+$skill-color-php: #6969f9;
+
+.portfolio-skills {
+
+	background: $color-section-two;
+
+	.portfolio-heading-block {
+		background: $color-section-one;
+	}
+	
+	.seperator-triangle {
+		border-left: solid 50vw $color-section-two;
+    	border-right: solid 50vw $color-section-two;
+	}
+
+	.portfolio-heading-block h2 {
+		color: $color-light;
+		&:before {
+			background: $color-light;
+		}
+	}
+
+	&__tree {
+		max-width: 600px;
+		margin: 0px auto;
+		position: relative;
+		padding-bottom: 24px;
+		overflow: hidden;
+		margin-bottom: 24px;
+		h3 {
+			margin-bottom: 28px;
+			border-bottom: solid 2px;
+			padding-bottom: 10px;
+		}
+	}
+
+}
+
+.portfolio-skill {
+	margin-bottom: 24px;
+	position: relative;
+	&__key {
+		width: 80px;
+	    font-weight: 300;
+	}
+	&__bar {
+		width: 100%;
+	    height: 26px;
+	    background: #d3d3e6;
+	    border-radius: 16px;
+	    margin: 0px 0px 0px 16px;
+	}
+	&__inner-bar {
+	    background: $skill-color-php;
+	    width: 0%;
+	    height: 20px;
+	    margin-top: 3px;
+	    border-radius: 16px 3px 3px 16px;
+	    margin-left: 3px;
+	    transition: width 0.6s;
+	}
+
+	
+	&--html { background: #65dcc2; }
+	&--css-sass { background: #f9e969; }
+	&--JavaScript { background: #e2975f; }
+	&--jQuery { background: #5f8ce2; }
+	&--jQuery { background: #5f8ce2; }
+	&--VueJs { background: #48d868; }
+	&--React { background: #74cbf7; }
+	
+	&--php { background: #8484f9; }
+	&--node { background: #198754; }
+
+	&--laravel { background: #d2522a; }
+	&--WordPress { background: #2ab1d2; }
+	&--Command { background: #444748; }
+
+}
+
+.portfolio-skill-grid {
+	position: absolute;
+	/*background: #ccc;*/
+	height: 100%;
+	width: calc(100% - 80px);
+	left: 96px;
+	&__level {
+		div {
+			background: #c5c5c5;
+		    height: 100%;
+		    width: 2px;
+		    position: absolute;
+		    top: -16px;
+		}
+		span {
+			position: absolute;
+			left: 10%;
+			bottom: 50px;
+			color: #c5c5c5;
+			font-weight: 200;
+			margin-left: 8px;
+			font-size: 14px;
+			white-space: nowrap;
+		}
+	}
+	.level-0 div { left: 20%; }
+	.level-1 div { left: 40%; }
+	.level-2 div { left: 60%; }
+	.level-3 div { left: 80%; }
+}

@@ -17,6 +17,11 @@
 
 	});
 
+	$('.close-menu').on('click', function() {
+		burger.removeClass('is-open');
+		menu.removeClass('is-open');
+	});
+
 	function loadSkillBars() {
 		var skillBars = $('.portfolio-skill__inner-bar');
 		skillBars.each(function() {

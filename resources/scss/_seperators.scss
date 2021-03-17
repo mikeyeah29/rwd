@@ -1,0 +1,8 @@
+.seperator-triangle {
+	width: 100vw;
+	height: 32px;
+    border-top: solid 32px transparent;
+	border-bottom: none;
+	border-left: solid 50vw $color-body;
+	border-right: solid 50vw $color-body;
+}
